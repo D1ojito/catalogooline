@@ -1007,6 +1007,17 @@
         .newsletter-indicators div.active {
             background-color: var(--primary-color);
         }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
     </style>
 </head>
 <body>
@@ -1053,14 +1064,6 @@
             <a href="#">Catálogo</a>
             <span>/</span>
             <span>Produtos em Destaque</span>
-        </div>
-        
-        <div class="banner">
-            <div class="banner-content">
-                <h2 id="bannerTitle">Novidades Imperdíveis</h2>
-                <p id="bannerMessage">Descubra nossa coleção exclusiva com até 50% de desconto</p>
-                <img id="bannerImage"alt="Produto em destaque" style="max-width: 100%; border-radius: 10px; margin-top: 1rem;">
-            </div>
         </div>
 
         <div class="products-header">
@@ -2099,6 +2102,23 @@ setInterval(updateBanner, 5000); // Atualiza a cada 5 segundos
         document.addEventListener("DOMContentLoaded", () => {
             createNewsletterIndicators();
             setInterval(autoSlideNewsletter, 5000); // Alterna a cada 5 segundos
+        });
+
+        let lastScrollPosition = 0;
+
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            const currentScrollPosition = window.pageYOffset;
+
+            if (currentScrollPosition > lastScrollPosition) {
+                // Rolando para baixo - esconder o cabeçalho
+                header.classList.add("hidden");
+            } else {
+                // Rolando para cima - mostrar o cabeçalho
+                header.classList.remove("hidden");
+            }
+
+            lastScrollPosition = currentScrollPosition;
         });
     </script>
 </body>
