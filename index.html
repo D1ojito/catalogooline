@@ -779,7 +779,7 @@
 
             .search-bar {
                 width: 100%;
-                margin: 1rem 0;
+                margin: 1rem;
             }
 
             .nav-categories {
@@ -791,7 +791,7 @@
             .products-header {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 1rem;
+                gap: 0.5rem;
             }
 
             .banner h2 {
@@ -810,6 +810,28 @@
                 width: 100%; /* Ocupa toda a largura em dispositivos móveis */
                 max-width: 300px; /* Limita a largura em dispositivos maiores */
                 margin: 0 auto; /* Centraliza o botão */
+            }
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .search-bar {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .favorites-icon, .cart-icon {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            .icons-container {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                width: 100%;
             }
         }
 
@@ -1032,13 +1054,15 @@
                 <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
                 <div class="search-suggestions" id="searchSuggestions"></div>
             </div>
-            <div class="favorites-icon" onclick="openFavoritesModal()">
-                <i class="fas fa-heart"></i>
-                <span class="favorites-count">0</span>
-            </div>
-            <div class="cart-icon" onclick="openCartModal()">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
+            <div class="icons-container">
+                <div class="favorites-icon" onclick="openFavoritesModal()">
+                    <i class="fas fa-heart"></i>
+                    <span class="favorites-count">0</span>
+                </div>
+                <div class="cart-icon" onclick="openCartModal()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
             </div>
         </div>
     </header>
