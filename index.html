@@ -2021,26 +2021,6 @@ function adjustSliderHeight() {
 window.addEventListener('resize', adjustSliderHeight);
 document.addEventListener('DOMContentLoaded', adjustSliderHeight);
 
-// Dados para o banner
-const bannerData = [
-    {
-        title: "Novidades Imperdíveis",
-        message: "Descubra nossa coleção exclusiva com até 50% de desconto",
-    },
-    {
-        title: "Ofertas Especiais",
-        message: "Compre agora e aproveite frete grátis em pedidos acima de R$ 200",
-    },
-    {
-        title: "Produtos em Destaque",
-        message: "Confira os itens mais vendidos da semana",
-    },
-    {
-        title: "Promoção Relâmpago",
-        message: "Descontos de até 70% por tempo limitado!",
-    }
-];
-
 let currentBannerIndex = 0;
 
 // Função para atualizar o banner
@@ -2085,24 +2065,6 @@ setInterval(updateBanner, 5000); // Atualiza a cada 5 segundos
                 indicator.classList.toggle("active", index === currentNewsletterIndex);
             });
         }
-
-        // Atualizar o slide de promoções
-        function updateNewsletterSlide() {
-            newsletterSlidesElement.style.transform = `translateX(-${currentNewsletterIndex * 100}%)`;
-            updateNewsletterIndicators();
-        }
-
-        // Alternar automaticamente os slides
-        function autoSlideNewsletter() {
-            currentNewsletterIndex = (currentNewsletterIndex + 1) % newsletterSlideCount;
-            updateNewsletterSlide();
-        }
-
-        // Inicializar o carrossel de promoções
-        document.addEventListener("DOMContentLoaded", () => {
-            createNewsletterIndicators();
-            setInterval(autoSlideNewsletter, 5000); // Alterna a cada 5 segundos
-        });
 
         let lastScrollPosition = 0;
 
