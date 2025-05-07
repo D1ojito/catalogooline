@@ -1049,6 +1049,51 @@
         header.hidden {
             transform: translateY(-100%);
         }
+
+        /* Ajuste no layout dos itens favoritos */
+        .favorites-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            gap: 1rem;
+        }
+
+        .favorites-item-info {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            gap: 1rem;
+        }
+
+        .favorites-item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .favorites-item-details {
+            flex-grow: 1;
+        }
+
+        .favorites-item-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .favorites-item-price {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .favorites-item-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -1677,15 +1722,15 @@
             }
             
             favoritesItemsList.innerHTML = favorites.map(item => `
-                <div class="cart-item">
-                    <div class="cart-item-info">
-                        <img src="${item.image}" alt="${item.productName}" class="cart-item-image">
-                        <div>
-                            <div class="cart-item-name">${item.productName}</div>
-                            <div class="cart-item-price">R$ ${item.price.toFixed(2).replace('.', ',')}</div>
+                <div class="favorites-item">
+                    <div class="favorites-item-info">
+                        <img src="${item.image}" alt="${item.productName}" class="favorites-item-image">
+                        <div class="favorites-item-details">
+                            <div class="favorites-item-name">${item.productName}</div>
+                            <div class="favorites-item-price">R$ ${item.price.toFixed(2).replace('.', ',')}</div>
                         </div>
                     </div>
-                    <div class="cart-item-actions">
+                    <div class="favorites-item-actions">
                         <button class="move-to-cart-btn" onclick="moveToCartFromFavorites('${item.productName}', ${item.price}, '${item.image}')">
                             Mover para o Carrinho
                         </button>
