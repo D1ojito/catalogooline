@@ -52,30 +52,6 @@
                         box-shadow 0.2s ease;
         }
 
-        /* Estilos para o sistema de avaliação */
-        .rating-stars {
-            display: inline-flex;
-            direction: rtl;
-            unicode-bidi: bidi-override;
-        }
-
-        .rating-stars input {
-            display: none;
-        }
-
-        .rating-stars label {
-            color: #ddd;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
-        .rating-stars input:checked ~ label,
-        .rating-stars label:hover,
-        .rating-stars label:hover ~ label {
-            color: var(--accent-color);
-        }
-
         /* Loading spinner para carregamento dinâmico */
         .loader {
             border: 5px solid #f3f3f3;
@@ -833,6 +809,39 @@
                 gap: 1rem;
                 width: 100%;
             }
+            header {
+                padding: 0.5rem 1rem; /* Reduz o padding do cabeçalho */
+                height: auto; /* Ajusta a altura automaticamente */
+            }
+
+            .header-container {
+                flex-direction: column; /* Empilha os elementos no cabeçalho */
+                gap: 0.5rem; /* Reduz o espaçamento entre os elementos */
+            }
+
+            .logo {
+                font-size: 1.5rem; /* Reduz o tamanho da logo */
+            }
+
+            .search-bar {
+                width: 100%; /* Garante que a barra de pesquisa ocupe toda a largura */
+                margin: 0; /* Remove margens extras */
+            }
+
+            .icons-container {
+                justify-content: center; /* Centraliza os ícones */
+                gap: 1rem; /* Espaçamento entre os ícones */
+            }
+
+            .nav-container {
+                margin-top: 0.5rem; /* Adiciona um pequeno espaçamento acima da barra de filtros */
+            }
+
+            .nav-categories {
+                flex-wrap: wrap; /* Permite que as categorias quebrem linha */
+                justify-content: center; /* Centraliza as categorias */
+                gap: 0.5rem; /* Espaçamento entre as categorias */
+            }
         }
 
         @media (max-width: 480px) {
@@ -1117,14 +1126,14 @@
                     <a href="https://facebook.com/sualoja" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/mercadodosfloristas" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://twitter.com/sualoja" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://wa.me/+5592984766246" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <!--<a href="https://wa.me/+5592984766246" target="_blank"><i class="fab fa-whatsapp"></i></a>-->
                 </div>
             </div>
             <div class="footer-column">
                 <h4>Contato</h4>
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> R. Primeiro de Maio, 157, São Jorge</li>
-                    <li><i class="fas fa-phone"></i> (92)98476-6246</li>
+                    <!--<li><i class="fas fa-phone"></i> (92)98476-6246</li>-->
                     <li><i class="fas fa-envelope"></i> contato@sualoja.com.br</li>
                     <li><i class="fas fa-clock"></i> Seg-Sex: 8h-17h</li>
                     <li><i class="fas fa-clock"></i> Sab: 8h-12h</li>
@@ -1224,7 +1233,7 @@
                 id: 1,
                 name: "Flor Vermelha",
                 category: "Flores",
-                description: "",
+                description: "Perfeita para arranjos e decorações.",
                 price: 45.99,
                 oldPrice: 49.99,
                 image: "image/produto/produto1.jpg",
@@ -1236,13 +1245,13 @@
                 id: 2,
                 name: "Sorgo vermelho",
                 category: "Desidratados",
-                description: "",
+                description: "Ideal para composições secas.",
                 price: 59.00,
                 oldPrice: 84.00,
                 image: "image/produto/produto2.jpg",
                 rating: 4,
-                ratingCount: 64,
-                <!--badge: ""-->
+                ratingCount: 100,
+                badge: "Novidade"
             },
             {
                 id: 3,
@@ -1286,6 +1295,26 @@
                 rating: 5,
                 ratingCount: 78,
                 badge: "Lançamento"
+            },
+            {
+                id: 7,
+                name: "Flor Branca",
+                category: "Flores",
+                description: "",
+                price: 89.00,
+                image: "image/produto/produto7.jpg",
+                rating: 4.5,
+                ratingCount: 120
+            },
+            {
+                id: 8,
+                name: "Flor Rosa",
+                category: "Flores",
+                description: "",
+                price: 29.00,
+                image: "image/produto/produto8.jpg",
+                rating: 4.5,
+                ratingCount: 150
             }
         ];
 
@@ -1706,7 +1735,7 @@
             }
             
             // Criar mensagem para WhatsApp
-            const whatsappNumber = "+5592984766246"; // Número de WhatsApp
+            //const whatsappNumber = "+5592984766246"; // Número de WhatsApp
             let message = `Olá, gostaria de saber se tem disponivel os seguintes itens:\n\n`;
             
             cart.forEach(item => {
