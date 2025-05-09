@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Flor Vermelha",
+        "category": "Flores",
+        "description": "Perfeita para arranjos e decorações.",
+        "price": 47.99,
+        "oldPrice": 49.99,
+        "image": "image/produto/produto1.jpg",
+        "rating": 4.5,
+        "ratingCount": 128,
+        "badge": "Novidade"
+    },
+    {
+        "id": 2,
+        "name": "Sorgo vermelho",
+        "category": "Desidratados",
+        "description": "Ideal para composições secas.",
+        "price": 59.00,
+        "oldPrice": 84.00,
+        "image": "image/produto/produto2.jpg",
+        "rating": 4,
+        "ratingCount": 100,
+        "badge": "Novidade"
+    },
+    {
+        "id": 3,
+        "name": "Tuia",
+        "category": "Tuía de Corte",
+        "description": "",
+        "price": 119.00,
+        "image": "image/produto/produto3.jpg",
+        "rating": 5,
+        "ratingCount": 92
+    },
+    {
+        "id": 4,
+        "name": "Protea King",
+        "category": "Proteas",
+        "description": "",
+        "price": 39.00,
+        "image": "image/produto/produto4.jpg",
+        "rating": 4.5,
+        "ratingCount": 215,
+        "badge": "Mais vendido"
+    },
+    {
+        "id": 5,
+        "name": "Áster",
+        "category": "Áster",
+        "description": "",
+        "price": 24.00,
+        "oldPrice": 29.00,
+        "image": "image/produto/produto5.jpg",
+        "rating": 4,
+        "ratingCount": 47
+    },
+    {
+        "id": 6,
+        "name": "Flor Amarela",
+        "category": "Flores",
+        "description": "",
+        "price": 359.00,
+        "image": "image/produto/produto6.jpg",
+        "rating": 5,
+        "ratingCount": 78,
+        "badge": "Lançamento"
+    },
+    {
+        "id": 7,
+        "name": "Flor Branca",
+        "category": "Flores",
+        "description": "",
+        "price": 89.00,
+        "image": "image/produto/produto7.jpg",
+        "rating": 4.5,
+        "ratingCount": 120
+    },
+    {
+        "id": 8,
+        "name": "Flor Rosa",
+        "category": "Flores",
+        "description": "",
+        "price": 29.00,
+        "image": "image/produto/produto8.jpg",
+        "rating": 4.5,
+        "ratingCount": 150
+    }
+    
+]
