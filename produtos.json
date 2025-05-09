@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "name": "Flor Vermelha",
+        "name": "Folhagens",
         "category": "Flores",
-        "description": "Perfeita para arranjos e decorações.",
+        "description": "Folhagens ideais para complementar arranjos e decorações.",
         "price": 47.99,
         "oldPrice": 49.99,
         "image": "image/produto/produto1.jpg",
@@ -13,9 +13,9 @@
     },
     {
         "id": 2,
-        "name": "Sorgo vermelho",
-        "category": "Desidratados",
-        "description": "Ideal para composições secas.",
+        "name": "Alstroeméria",
+        "category": "Flores",
+        "description": "Flores delicadas e versáteis para composições elegantes.",
         "price": 59.00,
         "oldPrice": 84.00,
         "image": "image/produto/produto2.jpg",
@@ -25,9 +25,9 @@
     },
     {
         "id": 3,
-        "name": "Tuia",
+        "name": "Mini Rosa",
         "category": "Tuía de Corte",
-        "description": "",
+        "description": "Mini rosas encantadoras para pequenos arranjos.",
         "price": 119.00,
         "image": "image/produto/produto3.jpg",
         "rating": 5,
@@ -35,9 +35,9 @@
     },
     {
         "id": 4,
-        "name": "Protea King",
-        "category": "Proteas",
-        "description": "",
+        "name": "Gypsophila",
+        "category": "Flores",
+        "description": "Conhecida como mosquitinho, perfeita para buquês delicados.",
         "price": 39.00,
         "image": "image/produto/produto4.jpg",
         "rating": 4.5,
@@ -46,9 +46,9 @@
     },
     {
         "id": 5,
-        "name": "Áster",
+        "name": "Áster Marianas",
         "category": "Áster",
-        "description": "",
+        "description": "Flores pequenas e charmosas para decorações sutis.",
         "price": 24.00,
         "oldPrice": 29.00,
         "image": "image/produto/produto5.jpg",
@@ -57,9 +57,9 @@
     },
     {
         "id": 6,
-        "name": "Flor Amarela",
+        "name": "Limonium",
         "category": "Flores",
-        "description": "",
+        "description": "Flores duráveis e elegantes para arranjos sofisticados.",
         "price": 359.00,
         "image": "image/produto/produto6.jpg",
         "rating": 5,
@@ -68,9 +68,9 @@
     },
     {
         "id": 7,
-        "name": "Flor Branca",
+        "name": "Gerbera",
         "category": "Flores",
-        "description": "",
+        "description": "Flores vibrantes e alegres para iluminar qualquer ambiente.",
         "price": 89.00,
         "image": "image/produto/produto7.jpg",
         "rating": 4.5,
@@ -78,13 +78,82 @@
     },
     {
         "id": 8,
-        "name": "Flor Rosa",
+        "name": "Anastasia",
         "category": "Flores",
-        "description": "",
+        "description": "Flores exuberantes e sofisticadas para ocasiões especiais.",
         "price": 29.00,
         "image": "image/produto/produto8.jpg",
         "rating": 4.5,
         "ratingCount": 150
+    },
+    {
+        "id": 9,
+        "name": "Lírio",
+        "category": "Flores",
+        "description": "Lírios elegantes e perfumados para decorações refinadas.",
+        "price": 19.00,
+        "image": "image/produto/produto9.jpg",
+        "rating": 4.5,
+        "ratingCount": 200
+    },
+    {
+        "id": 10,
+        "name": "Rosas Curtas",
+        "category": "Flores",
+        "description": "Rosas de caule curto, ideais para pequenos arranjos.",
+        "price": 39.00,
+        "image": "image/produto/produto10.jpg",
+        "rating": 4.5,
+        "ratingCount": 300
+    },
+    {
+        "id": 11,
+        "name": "Hortência",
+        "category": "Flores",
+        "description": "Hortências volumosas e coloridas para decorações impactantes.",
+        "price": 49.00,
+        "image": "image/produto/produto11.jpg",
+        "rating": 4.5,
+        "ratingCount": 400
+    },
+    {
+        "id": 12,
+        "name": "Statice",
+        "category": "Flores",
+        "description": "Flores delicadas e duráveis para arranjos secos ou frescos.",
+        "price": 59.00,
+        "image": "image/produto/produto12.jpg",
+        "rating": 4.5,
+        "ratingCount": 500
+    },
+    {
+        "id": 13,
+        "name": "Girassol",
+        "category": "Flores",
+        "description": "Girassóis vibrantes que trazem alegria e energia.",
+        "price": 69.00,
+        "image": "image/produto/produto13.jpg",
+        "rating": 4.5,
+        "ratingCount": 600
+    },
+    {
+        "id": 14,
+        "name": "Flor do Campo",
+        "category": "Flores",
+        "description": "Flores do campo naturais para arranjos rústicos e delicados.",
+        "price": 79.00,
+        "image": "image/produto/produto14.jpg",
+        "rating": 4.5,
+        "ratingCount": 700
+    },
+    {
+        "id": 15,
+        "name": "Mini Cravo",
+        "category": "Flores",
+        "description": "Mini cravos delicados para detalhes especiais em arranjos.",
+        "price": 89.00,
+        "image": "image/produto/produto15.jpg",
+        "rating": 4.5,
+        "ratingCount": 800
     }
-    
 ]
